@@ -35,7 +35,7 @@ export default function Home() {
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="flex-1 overflow-auto p-4">
         {messages.map((msg, index) => (
-          <div key={index} className={`flex ${msg.sender === 'user' ? 'justify-' : ''}`}>
+          <div key={index} className={`flex ${msg.sender === 'user' ? 'justify-end' : ''}`}>
             <div className="flex items-center mb-4">
               <img
                 src={msg.sender === 'user' ? '/user.png' : '/bot.png'}
